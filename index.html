@@ -255,13 +255,6 @@
                 '<div><b>Status (IBA): </b>' + (feature.properties['IbaStatus'] !== null ? autolinker.link(feature.properties['IbaStatus'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Status (KBA): </b>' + (feature.properties['KbaStatus'] !== null ? autolinker.link(feature.properties['KbaStatus'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Status (AZE): </b>' + (feature.properties['AzeStatus'] !== null ? autolinker.link(feature.properties['AzeStatus'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Created By: </b>' + (feature.properties['CreatedBy'] !== null ? autolinker.link(feature.properties['CreatedBy'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Added By: </b>' + (feature.properties['AddedBy'] !== null ? autolinker.link(feature.properties['AddedBy'].toLocaleString()) : '') +  '</div>' + 
-                '<div><b>Date Added: </b>' + (feature.properties['AddedDate'] !== null ? autolinker.link(feature.properties['AddedDate'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Changed By: </b>' + (feature.properties['ChangeBy'] !== null ? autolinker.link(feature.properties['ChangeBy'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Date Changed: </b>' + (feature.properties['ChangeDate'] !== null ? autolinker.link(feature.properties['ChangeDate'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Source: </b>' + (feature.properties['Source'] !== null ? autolinker.link(feature.properties['Source'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Description: </b>' + (feature.properties['DelTxt'] !== null ? autolinker.link(feature.properties['DelTxt'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Legacy: </b>' + (feature.properties['LegacyKBA'] !== null ? autolinker.link(feature.properties['LegacyKBA'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>GIS Area(Ha.): </b>' + (feature.properties['GISArea'] !== null ? autolinker.link(feature.properties['GISArea'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Quality: </b>' + (feature.properties['KBA_Qual'] !== null ? autolinker.link(feature.properties['KBA_Qual'].toLocaleString()) : '') +  '</div>' +
@@ -543,7 +536,6 @@
             style: style_MPSA,
         });
         bounds_group.addLayer(layer_MPSA);
-        map.addLayer(layer_MPSA);
 
         //FTAA Layer (Approved Tenements)
         function pop_FTAA(feature, layer) {
@@ -686,7 +678,6 @@
             style: style_FTAA,
         });
         bounds_group.addLayer(layer_FTAA);
-        map.addLayer(layer_FTAA);
 
         //EP Layer (Approved Tenements)
         function pop_EP(feature, layer) {
@@ -829,7 +820,6 @@
             style: style_EP,
         });
         bounds_group.addLayer(layer_EP);
-        map.addLayer(layer_EP);
 
         //ISAG Layer (Approved Tenements)
         function pop_ISAG(feature, layer) {
@@ -972,7 +962,6 @@
             style: style_ISAG,
         });
         bounds_group.addLayer(layer_ISAG);
-        map.addLayer(layer_ISAG);
 
         //GSQP Layer (Approved Tenements)
         function pop_GSQP(feature, layer) {
@@ -1115,7 +1104,6 @@
             style: style_GSQP,
         });
         bounds_group.addLayer(layer_GSQP);
-        map.addLayer(layer_GSQP);
 
         //MLC Layer (Approved Tenements)
         function pop_MLC(feature, layer) {
@@ -1258,7 +1246,6 @@
             style: style_MLC,
         });
         bounds_group.addLayer(layer_MLC);
-        map.addLayer(layer_MLC);
 
         //PMC Layer (Approved Tenements)
         function pop_PATENTED(feature, layer) {
@@ -1400,7 +1387,6 @@
             style: style_PATENTED,
         });
         bounds_group.addLayer(layer_PATENTED);
-        map.addLayer(layer_PATENTED);
 
         //PMDC Layer (Approved Tenements)
         function pop_PMDC(feature, layer) {
@@ -1543,7 +1529,6 @@
             style: style_PMDC,
         });
         bounds_group.addLayer(layer_PMDC);
-        map.addLayer(layer_PMDC);
 
         //PROC Layer (Approved Tenements)
         function pop_PROC(feature, layer) {
@@ -1686,7 +1671,6 @@
             style: style_PROC,
         });
         bounds_group.addLayer(layer_PROC);
-        map.addLayer(layer_PROC);
 
         //TENEMENT APPLICATIONS
         //APSA Layer (Tenement Applications)
@@ -1830,7 +1814,6 @@
             style: style_APSA,
         });
         bounds_group.addLayer(layer_APSA);
-        map.addLayer(layer_APSA);
 
         //AFTA Layer (Tenement Applications)
         function pop_AFTA(feature, layer) {
@@ -1973,7 +1956,6 @@
             style: style_AFTA,
         });
         bounds_group.addLayer(layer_AFTA);
-        map.addLayer(layer_AFTA);
 
         //EXPA Layer (Tenement Applications)
         function pop_EXPA(feature, layer) {
@@ -2116,7 +2098,6 @@
             style: style_EXPA,
         });
         bounds_group.addLayer(layer_EXPA);
-        map.addLayer(layer_EXPA);
 
         //IPAIA Layer (Tenement Applications)
         function pop_IPAIA(feature, layer) {
@@ -2258,7 +2239,6 @@
             style: style_IPAIA,
         });
         bounds_group.addLayer(layer_IPAIA);
-        map.addLayer(layer_IPAIA);
 
         //GSQPA Layer (Tenement Applications)
         function pop_GSQPA(feature, layer) {
@@ -2401,7 +2381,6 @@
             style: style_GSQPA,
         });
         bounds_group.addLayer(layer_GSQPA);
-        map.addLayer(layer_GSQPA);
 
         //ASMEP Layer (Tenement Applications)
         function pop_ASMEP(feature, layer) {
@@ -2544,7 +2523,6 @@
             style: style_ASMEP,
         });
         bounds_group.addLayer(layer_ASMEP);
-        map.addLayer(layer_ASMEP);
 
         //AMB Layer (Tenement Applications)
         function pop_AMB(feature, layer) {
@@ -2687,7 +2665,6 @@
             style: style_AMB,
         });
         bounds_group.addLayer(layer_AMB);
-        map.addLayer(layer_AMB);
 
         //MRA Layer (Tenement Applications)
         function pop_MRA(feature, layer) {
@@ -2830,7 +2807,6 @@
             style: style_MRA,
         });
         bounds_group.addLayer(layer_MRA);
-        map.addLayer(layer_MRA);
 
 
         //INCOMPLETE Layer (Incomplete Data)
@@ -2974,7 +2950,6 @@
             style: style_INCOMPLETE,
         });
         bounds_group.addLayer(layer_INCOMPLETE);
-        map.addLayer(layer_INCOMPLETE);
 
         //CADT Layer
          function pop_CADT(feature, layer) {
@@ -3046,17 +3021,7 @@
                 '<div><b>District: </b>' + (feature.properties['DISTRICT'] !== null ? autolinker.link(feature.properties['DISTRICT'].toLocaleString()) : '') +  '</div>' + 
                 '<div><b>Municipal City: </b>' + (feature.properties['MUNI_CITY'] !== null ? autolinker.link(feature.properties['MUNI_CITY'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Barangay: </b>' + (feature.properties['BARANGAY'] !== null ? autolinker.link(feature.properties['BARANGAY'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Date Issued: </b>' + (feature.properties['DATE_ISSD'] !== null ? autolinker.link(feature.properties['DATE_ISSD'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Date Expired: </b>' + (feature.properties['DATE_EXPD'] !== null ? autolinker.link(feature.properties['DATE_EXPD'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Area (ha.): </b>' + (feature.properties['AREA_HA'] !== null ? autolinker.link(feature.properties['AREA_HA'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Remarks: </b>' + (feature.properties['REMARKS'] !== null ? autolinker.link(feature.properties['REMARKS'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>TEN_CD: </b>' + (feature.properties['TEN_CD'] !== null ? autolinker.link(feature.properties['TEN_CD'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>PSGC_CD: </b>' + (feature.properties['PSGC_CD'] !== null ? autolinker.link(feature.properties['PSGC_CD'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Number of PAR: </b>' + (feature.properties['NO_OF_PAR'] !== null ? autolinker.link(feature.properties['NO_OF_PAR'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Site ID: </b>' + (feature.properties['SITE_ID'] !== null ? autolinker.link(feature.properties['SITE_ID'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Area CD: </b>' + (feature.properties['AREA_CD'] !== null ? autolinker.link(feature.properties['AREA_CD'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Unique ID: </b>' + (feature.properties['UNIQ_ID'] !== null ? autolinker.link(feature.properties['UNIQ_ID'].toLocaleString()) : '') +  '</div>' +
-                '<div><b>Area irish: </b>' + (feature.properties['AREA_irish'] !== null ? autolinker.link(feature.properties['AREA_irish'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Status_ice: </b>' + (feature.properties['STATUS_ice'] !== null ? autolinker.link(feature.properties['STATUS_ice'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>Status: </b>' + (feature.properties['STATUS'] !== null ? autolinker.link(feature.properties['STATUS'].toLocaleString()) : '') +  '</div>' +
                 '<div><b>GIS Area: </b>' + (feature.properties['Area_GIS'] !== null ? autolinker.link(feature.properties['Area_GIS'].toLocaleString()) : '') +  '</div>' +
@@ -3192,8 +3157,8 @@
             onEachFeature: pop_RSOURCES,
             style: style_RSOURCES,
         });
+
         bounds_group.addLayer(layer_RSOURCES);
-        map.addLayer(layer_RSOURCES);
 
         //AFTA_2023 Layer
         function pop_AFTA_2023(feature, layer) {
@@ -4005,15 +3970,16 @@
             return {
                 pane: 'pane_GSQP_OMR_2023',
                 opacity: 1,
-                color: '#fff6af',
+                color: '#ff5b5b',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .9,
-                fillColor: '#ffeb13',
+                fillColor: '#e31a1c',
                 interactive: true,
+                
             }
         }
 
@@ -4146,14 +4112,14 @@
             return {
                 pane: 'pane_PMC_2023',
                 opacity: 1,
-                color: '#fff6af',
+                color: '#ff5b5b',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .9,
-                fillColor: '#ffeb13',
+                fillColor: '#e31a1c',
                 interactive: true,
             }
         }
@@ -4287,14 +4253,14 @@
             return {
                 pane: 'pane_JOA_PMDC_2023',
                 opacity: 1,
-                color: '#fff6af',
+                color: '#ff5b5b',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .9,
-                fillColor: '#ffeb13',
+                fillColor: '#e31a1c',
                 interactive: true,
             }
         }
@@ -4427,14 +4393,14 @@
             return {
                 pane: 'pane_PROC_2023',
                 opacity: 1,
-                color: '#fff6af',
+                color: '#ff5b5b',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .9,
-                fillColor: '#ffeb13',
+                fillColor: '#e31a1c',
                 interactive: true,
             }
         }
@@ -4991,14 +4957,14 @@
             return {
                 pane: 'pane_DMBA_MB_2023',
                 opacity: 1,
-                color: '#fff6af',
+                color: '#ff5b5b',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: .9,
-                fillColor: '#ffeb13',
+                fillColor: '#e31a1c',
                 interactive: true,
             }
         }
@@ -6867,7 +6833,10 @@
             {label: '<img src="legend/CADT.png" /> <b>Certificate of Ancestral Domain Title (CADT)</b>', layer: layer_CADT},
             {label: '<img src="legend/IFMA.png" /> <b>Integrated Forest Management Agreement (IFMA)</b>', layer: layer_IFMA},
             {label: '<img src="legend/INCOMPLETE.png" /> <b>Indigenous Community and Conserved Areas (ICCA)</b>', layer: layer_ICCA},
-            {label: '<img src="legend/tenement.png" /> <b>Renewable Sources</b>', layer: layer_RSOURCES},
+            {label: '<img src="legend/tenement.png" /> <b>Renewable Energy Sources</b>', layer: layer_RSOURCES},
+            {label: '<img src="legend/WATER.png" /> <b>Watersheds</b>', layer: layer_WATERSHED},
+            {label: '<img src="legend/PROTECTED.png" /> <b>Protected Areas (PA)</b>', layer: layer_PA},
+            {label: '<img src="legend/KEY.png" /> <b>Keybiodiversity Areas (KBA)</b>', layer: layer_KEY},
             {label: '<img src="legend/INCOMPLETE.png" /> <b>Data points</b>', layer: layer_DATA_POINTS_2023},
 
         ] 
@@ -6898,9 +6867,6 @@
                 {label: '<img src="legend/tenement.png" /> Application for Mineral Reservation (MRA)', layer: layer_MRA},
             ]},           
             {label: '<img src="legend/incomplete.png" /> <b>Incomplete Data</b>', layer: layer_INCOMPLETE},
-            {label: '<img src="legend/WATER.png" /> <b>Watersheds</b>', layer: layer_WATERSHED},
-            {label: '<img src="legend/PROTECTED.png" /> <b>Protected Areas (PA)</b>', layer: layer_PA},
-            {label: '<img src="legend/KEY.png" /> <b>Keybiodiversity Areas (KBA)</b>', layer: layer_KEY},
             {label: '<img src="legend/BASEMAP1.png" /> <b>GP basemap</b>', layer: layer_GPBasemap_0},
         ]
 
